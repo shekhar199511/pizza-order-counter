@@ -1,6 +1,6 @@
 # PizzaOrderCounter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4. Run npm install on the project.
 
 ## Development server
 
@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Third party packages
+
+Buutstrap angular project => ng add @ng-bootstrap/ng-bootstrap
