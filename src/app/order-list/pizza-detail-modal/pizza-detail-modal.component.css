@@ -1,0 +1,11 @@
+.orderDetail{
+    display: flex;
+}
+
+.orderDetailTitle{
+    float: left;
+}
+
+.orderDetailValue{
+    float: right;
+}

@@ -1,0 +1,33 @@
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Order Details</h4>
+    </div>
+    <div class="modal-body">
+        <div>
+            <div class="orderDetail">
+                <div class="orderDetailTitle"><b>Customer Name : </b></div>
+                <div class="orderDetailValue">cutomerName</div>
+            </div>
+            <div class="orderDetail">
+                <div class="orderDetailTitle"><b>Delivery Address : </b></div>
+                <div class="orderDetailValue">deliveryname</div>
+            </div>
+            <hr/>
+            <div class="orderDetail">
+                <div class="orderDetailTitle"><b>Item Name : </b></div>
+                <div class="orderDetailValue">Itemname</div>
+            </div>
+            <div class="orderDetail">
+                <div class="orderDetailTitle"><b>Price : </b></div>
+                <div class="orderDetailValue">Price</div>
+            </div>
+            <div class="orderDetail">
+                <div class="orderDetailTitle"><b>Total Price : </b></div>
+                <div class="orderDetailValue">TotalPrice</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close')">Close</button>
+    </div>
+</ng-template>

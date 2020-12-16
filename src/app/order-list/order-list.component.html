@@ -1,0 +1,57 @@
+<div class="orderListContainer">
+    <div>
+        <div class="orderList">
+            <div class="orderDetailHeader">Customer Name</div>
+            <div class="orderDetailHeader">No. of Items</div>
+            <div class="orderDetailHeader">Total Amount</div>
+            <div class="orderDetailHeader">Status</div>
+            <div class="orderDetailHeader">Change Status</div>
+        </div>
+        <hr/>
+    </div>
+    <div *ngFor="let order of orders; let i=index">
+        <div class="orderList" (click)="openDescription(content, i, $event)">
+            <div class="orderDetail">{{order.CustomerName}}</div>
+            <div class="orderDetail">{{order.NoOfItems}}</div>
+            <div class="orderDetail">{{order.TotalAmount}}</div>
+            <div class="orderDetail">{{order.Status}}</div>
+            <button class="btn" (click)="changeStatus(i)">Change Status</button>
+        </div>
+        <hr/>
+    </div>
+</div>
+
+<ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Order Details</h4>
+    </div>
+    <div class="modal-body">
+        <div>
+            <div class="orderDesc">
+                <div class="orderDetailTitle"><b>Customer Name : </b></div>
+                <div class="orderDetailValue">{{name}}</div>
+            </div>
+            <div class="orderDesc">
+                <div class="orderDetailTitle"><b>Delivery Address : </b></div>
+                <div class="orderDetailValue">{{address}}</div>
+            </div>
+            <hr/>
+            <div class="orderDesc">
+                <div class="orderDetailTitle"><b>Item Name : </b></div>
+                <div class="orderDetailValue">{{items}}</div>
+            </div>
+            <div class="orderDesc">
+                <div class="orderDetailTitle"><b>Price : </b></div>
+                <div class="orderDetailValue">{{amount}}</div>
+            </div>
+            <div class="orderDesc">
+                <div class="orderDetailTitle"><b>Total Price : </b></div>
+                <div class="orderDetailValue">{{totalAmt}}</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="modal.close('Close')">Close</button>
+    </div>
+</ng-template>
+
