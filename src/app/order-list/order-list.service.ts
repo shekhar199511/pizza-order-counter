@@ -13,6 +13,8 @@ export class OrderListService{
                     TotalAmount : '45', Status : 'Order Received'},
                     {CustomerName : 'Kailash', DeliveryAddress : 'Madhya Pradesh', NoOfItems: '3', Amount : '45', 
                     TotalAmount : '45', Status : 'Order Received'},
+                    {CustomerName : 'Marco', DeliveryAddress : 'Netherlands', NoOfItems: '3', Amount : '45', 
+                    TotalAmount : '45', Status : 'Order Received'},
                     {CustomerName : 'Mili', DeliveryAddress : 'Uttar Pradesh', NoOfItems: '2', Amount : '30', 
                     TotalAmount : '30', Status : 'Order Received'},
                     {CustomerName : 'Pooja', DeliveryAddress : 'Maharashtra', NoOfItems: '2', Amount : '30', 
